@@ -1,0 +1,3 @@
+#!/bin/bash
+CFILE="your_file.c"
+cpp "$CFILE" > c
