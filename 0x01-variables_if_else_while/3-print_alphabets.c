@@ -1,18 +1,21 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
- * main - Entry point
+ *main - Entry point
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int x;
+	char ch;
 
-	for (x = 'A'; x <= 'Z'; x++)
-	{
-		putchar(toupper(x));
-	}
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+
 	putchar('\n');
 	return (0);
 }
