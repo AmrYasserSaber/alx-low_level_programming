@@ -9,7 +9,5 @@
 
 int _islower(char c)
 {
-if (islower(c) == 2)
-return (1);
-return (0);
+return (c >= 97 && c <= 122);
 }
