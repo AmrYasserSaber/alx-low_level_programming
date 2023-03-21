@@ -6,7 +6,7 @@
  * Return:void
  */
 
-void print_last_digit(int n)
+int print_last_digit(int n)
 {
 	printf("%d", n % 10);
 }
