@@ -27,6 +27,3 @@ void times_table(void)
 		printf("\n");
 	}
 }
-int main(void){
-	times_table();
-}
