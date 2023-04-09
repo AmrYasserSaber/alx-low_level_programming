@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include "7-leet.c"
 
 /**
  * main - check the code for
