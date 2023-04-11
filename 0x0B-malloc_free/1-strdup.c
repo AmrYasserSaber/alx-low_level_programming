@@ -5,7 +5,7 @@
 int _strlen(char *str);
 
 /**
- * strlen - get the length of string.
+ * _strlen - get the length of string.
  * @str: the string.
  *
  * Return: intrger of the length.
