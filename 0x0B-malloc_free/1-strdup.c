@@ -15,6 +15,11 @@ int _strlen(char *str)
 {
 	int len = 0;
 
+	if(str==NULL)
+	{
+		return (0);	
+	}
+
 	while (str[len] != '\0')
 	{
 		len++;
@@ -50,7 +55,6 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	*(my_array + i) = '\0';
 
 	return (my_array);
 }
