@@ -42,7 +42,7 @@ char *_strdup(char *str)
 {
 	int i = 0;
 
-	char *my_array = malloc(_strlen(str) * sizeof(char));
+	char *my_array = malloc(_strlen(str) * sizeof(char)-1);
 
 	if (my_array == NULL)
 	{
@@ -55,6 +55,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
+	*(my_array + i) = '\0';
 
 	return (my_array);
 }
