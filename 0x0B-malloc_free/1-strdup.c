@@ -11,7 +11,7 @@ int strlen(char *str);
  * Return: intrger of the length.
  */
 
-int strlen(char *str)
+int _strlen(char *str)
 {
 	int len = 0;
 
@@ -37,7 +37,7 @@ char *_strdup(char *str)
 {
 	int i = 0;
 
-	char *my_array = malloc(strlen(str) * sizeof(char));
+	char *my_array = malloc(_strlen(str) * sizeof(char));
 
 	if (my_array == NULL)
 	{
