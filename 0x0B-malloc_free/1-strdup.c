@@ -41,11 +41,11 @@ int _strlen(char *str)
 char *_strdup(char *str)
 {
 	int i = 0;
-
+	char *my_array;
 	if (str == NULL)
 		return (NULL);
 
-	char *my_array = malloc(_strlen(str) * sizeof(char) + 1);
+	my_array = malloc(_strlen(str) * sizeof(char) + 1);
 
 	if (my_array == NULL)
 	{
