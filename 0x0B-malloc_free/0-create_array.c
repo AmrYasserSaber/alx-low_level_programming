@@ -26,9 +26,10 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	for (i; i < size; i++)
+	while (i < size)
 	{
-		my_array[i] = c;
+		*(my_array + i) = c;
+		i++;
 	}
 
 	*(my_array + i) = '\0';
