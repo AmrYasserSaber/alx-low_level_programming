@@ -42,6 +42,9 @@ char *_strdup(char *str)
 {
 	int i = 0;
 
+	if (str == NULL)
+		return (NULL);
+
 	char *my_array = malloc(_strlen(str) * sizeof(char) + 1);
 
 	if (my_array == NULL)
