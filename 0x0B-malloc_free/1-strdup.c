@@ -42,6 +42,7 @@ char *_strdup(char *str)
 {
 	int i = 0;
 	char *my_array;
+	
 	if (str == NULL)
 		return (NULL);
 
