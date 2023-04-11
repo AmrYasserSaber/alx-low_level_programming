@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 
-int strlen(char *str);
+int _strlen(char *str);
 
 /**
  * strlen - get the length of string.
