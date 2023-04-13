@@ -1,24 +1,21 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
-
 /**
- * malloc_checked - ceate a space with length b.
- * @b: the length of space it creates.
+ * *malloc_checked - allocates memory using malloc
+ * @b: number of bytes to allocate
  *
- * Return: a pointer to the space
- * On error, 98 is returned, and errno is set appropriately.
+ * Return: a pointer to the allocated memory
  */
-
 void *malloc_checked(unsigned int b)
 {
-	void *my_array;
+	void *ptr;
 
-	my_array = malloc(b);
+	ptr = malloc(b);
 
-	if (my_array == NULL)
+	if (ptr == NULL)
 		exit(98);
 
-	return(my_array);
+	return (ptr);
 }
 
