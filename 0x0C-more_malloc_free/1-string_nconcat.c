@@ -12,23 +12,27 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len1;
-	int len2;
+	int len1 = 0;
+	int len2 = 0;
 	int j;
 	char *my_array;
 
-	while (*s1)
+	while (s1[len1])
+	{
 		len1++;
+	}
 
-	while (*s2)
+	while (s2[len2])
+	{
 		len2++;
+	}
 
 	if (n > len2)
 		n = len2;
 
 	my_array = malloc(len1 + n);
 
-	if (my_array)
+	if (my_array == NULL)
 		return (NULL);
 
 	for (int i = 0 ; i < len1 ;  i++)
