@@ -12,12 +12,13 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *my_array = malloc(b * sizeof(char));
+	void *my_array;
 
-	if (my_array)
-	{
-		return (my_array);
-	}
-	exit(98);
+	my_array = malloc(b);
+
+	if (my_array == NULL)
+		exit(98);
+
+	return(my_array);
 }
 
