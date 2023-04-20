@@ -1,8 +1,8 @@
-#ifndef _VARIADIC_H_
+#ifndef VAR_FUNC_H
 
-#define _VARIADIC_H_
+#define VAR_FUNC_H
 
-
+#include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
 
