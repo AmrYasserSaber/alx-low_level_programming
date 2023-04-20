@@ -1,9 +1,10 @@
 #include <stdarg.h>
-#include "main.h"
+#include "variadic_functions.h"
 
 /**
  * sum_them_all -sum the number passed in the argements
  * @n: name of arguments
+ *@...: A variable number of paramters to calculate the sum of.
  *
  * Return: Sum.
  */
