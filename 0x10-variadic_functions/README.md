@@ -26,6 +26,22 @@ Print a new line at the end of your function
 
 File 2-print_strings.c is a function that prints strings, followed by a new line.
 
+2. One woman's constant is another woman's variable
+Write a function that prints strings, followed by a new line.
+
+Prototype: void print_strings(const char *separator, const unsigned int n, ...);
+
+where separator is the string to be printed between the strings and n is the number of strings passed to the function
+
+You are allowed to use printf
+
+If separator is NULL, don’t print it
+
+If one of the string is NULL, print (nil) instead
+
+Print a new line at the end of your function
+
+
 File 3-print_all.c is a function that prints anything.
 
 File variadic_functions.h is the header file that contains all the function prototypes.
