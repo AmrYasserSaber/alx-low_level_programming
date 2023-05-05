@@ -1,19 +1,25 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * clear_bit - set the value of a bit to 0 at a given index
- * @n: decimal number passed by pointer
- * @index: index position to change, starting from 0
- * Return: 1 if it worked, -1 if error
+ * flip_bits - flip bits to convert one number to another number
+ * @n: first number
+ * @m: second number to convert to
+ * Return: number of bits that was needed to flip
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int i,counter=0;
-	// unsigned long int max = n > m ? n :m ;
-	for (i = 64; i > 0; i--)
+	unsigned long int diff;
+	int counter;
+
+	diff = n ^ m;
+	counter = 0;
+
+	while (diff)
 	{
-		if(((n << i)&1) != ((m << i)&1))
 		counter++;
+		diff &= (diff - 1);
 	}
-	return(counter);
+
+	return (counter);
 }
