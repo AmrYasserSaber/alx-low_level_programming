@@ -1,5 +1,16 @@
 #include "search_algos.h"
 
+
+/**
+ * binary_search - searches for a value in a sorted array of
+ * integers using the Binary search algorithm
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: Always EXIT_SUCCESS
+ */
+
 int binary_search(int *array, size_t size, int value)
 	{
 	int i, left = 0, right = size - 1;
